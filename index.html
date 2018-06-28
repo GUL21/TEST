@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<div id="toTop">^ Наверх</div>
+<body>
+	<div id="block-main">
+		<div id="block-header">
+			<ul>
+				<li class="m"><a href="#personal">Личная информация</a></li>
+				<li class="m"><a href="#experience">Опыт</a></li>
+				<li class="m"><a href="#js">Javascript</a></li>
+				<li class="m"><a href="#self">О себе</a></li>
+				<li><a id="down"><img src="img/down.png"  width="20" height="20"></a></li>
+			</ul>
+			
+			<div id="menu">
+				<ul>
+					<li><a href="#personal">Личная информация</a></li>
+					<li><a href="#experience">Опыт</a></li>
+					<li><a href="#js">Javascript</a></li>
+					<li><a href="#self">О себе</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="block-body">
+				<h2>Анкета</h2><br>
+				<img src="img/1.png" class="img">
+				<h3 class="center"><span id="personal">Личная информация</span></h3>
+				<form class="center">
+					<input type="text" name="fio" placeholder="ФИО" class="text" value="Гулько Владимир Владимирович"><br>
+					<select>
+						<option>1990</option>
+						<option>1991</option>
+						<option>1992</option>
+						<option>1993</option>
+						<option>1994</option>
+						<option selected="selected">1995</option>
+						<option>1996</option>
+					</select><br>
+					<input type="text" name="place" placeholder="Место проживания" id="text" value="Киев"><br>
+					<input type="text" name="skype" placeholder="Skype" class="text" value="vladimir.gulko@ukr.net"><br>
+					<input type="text" name="mail" placeholder="E-mail" class="text" value="vladimir.gulko@ukr.net"><br>
+				</form><br><br>
+				<img src="img/2.png" class="img">
+				<h3 class="center"><span id="experience">Расскажите о своем опыте</span></h3>
+				<form>
+					<div id="check">
+						<ul>
+							<li><input type="checkbox">БЭМ/OCSS</li>
+							<li><input type="checkbox">Stylus/LESS/SASS</li>
+							<li><input type="checkbox">Работаю с SVG</li>
+						</ul>
+						<ul>
+							<li><input type="checkbox">Верстаю семантично</li>
+							<li><input type="checkbox">ES2015/ES2016</li>
+							<li><input type="checkbox">GULP/GRUNT</li>
+						</ul>
+						<ul>
+							<li><input type="checkbox">Webpack</li>
+							<li><input type="checkbox" checked>jQuery</li>
+							<li><input type="checkbox" checked>Использую Git</li>
+						</ul>
+					</div>
+				</form>
+				<img src="img/3.png" class="img">
+				<h3 class="center"><span id="js">Уровень владения JavaScript</span></h3>
+				<div id="text">
+					<ul>
+						<li>Не владею</li>
+						<li id="one">Использую готовые <br> решения</li>
+						<li>Использую готовые решения <br> и умею переделывать</li>
+						<li>Пишу сложный JS с нуля</li>
+					</ul>
+					<ul id="line">
+						<li id="l1"></li>
+						<li id="l2"></li>
+						<li id="three"></li>
+						<li id="four"></li>
+					</ul>
+				</div>
+				<form class="center">
+					<input type="range" min="0" max="100" value="25" class="range" oninput="range()">
+				</form><br><br>
+				<img src="img/4.png" class="img">
+				<h3 class="center"><span id="self">Расскажите о себе</span></h3>
+				<h6 class="center">Напишите несколько предложений, чем привлекла наша вакансия<br> и что вы ожидаете от работы у нас</h6>
+				<form id="cent">
+					<textarea placeholder="Понравилась тем, что...">Вакансия привлекла возможностью испытать свои знания и навыки, а также получить опыт по верстке сайтов</textarea><br>
+					<input type="submit" name="submit" value="Готово" id="submit">
+				</form>
+		</div>
+	</div>
+</body>
+</html>
